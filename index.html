@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CC-0054A · QUEUE/STACK SIGNAL</title>
+    <!-- CSS file name exactly as requested: style.css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- QUEUE CARD (technical panel) -->
+        <div class="card queue scan">
+            <div class="target-circle"></div>
+            <div class="crosshair"></div>
+            <div class="tech-label">CC-0054A / QUEUE</div>
+            <h2>
+                QUEUE
+                <span class="code">FIFO</span>
+            </h2>
+            <div class="display-area" id="queueDisplay">
+                <!-- dynamic badges rendered by funtion.js -->
+            </div>
+            <div class="input-group">
+                <input type="text" id="queueInput" placeholder="ENQUEUE DATA" value="SIGNAL">
+            </div>
+            <div class="action-row">
+                <button id="enqueueBtn" title="enqueue">➕ ENQUEUE</button>
+                <button id="dequeueBtn" title="dequeue">➖ DEQUEUE</button>
+                <button id="queuePeekBtn" title="peek front">◎ PEEK</button>
+            </div>
+            <div class="meta-info">
+                <span>FRONT ◀ BACK</span>
+                <span id="queueSize" class="badge-op">SIZE: 0</span>
+            </div>
+        </div>
+
+        <!-- STACK CARD (technical panel) -->
+        <div class="card stack scan">
+            <div class="target-circle"></div>
+            <div class="crosshair"></div>
+            <div class="tech-label">CC-0054A / STACK</div>
+            <h2>
+                STACK
+                <span class="code">LIFO</span>
+            </h2>
+            <div class="display-area" id="stackDisplay">
+                <!-- dynamic badges rendered by funtion.js -->
+            </div>
+            <div class="input-group">
+                <input type="text" id="stackInput" placeholder="PUSH DATA" value="VIOLENCE">
+            </div>
+            <div class="action-row">
+                <button id="pushBtn" title="push">⬆ PUSH</button>
+                <button id="popBtn" title="pop">⬇ POP</button>
+                <button id="stackPeekBtn" title="peek top">◎ PEEK</button>
+            </div>
+            <div class="meta-info">
+                <span>BOTTOM ▶ TOP</span>
+                <span id="stackSize" class="badge-op">SIZE: 0</span>
+            </div>
+        </div>
+    </div>
+    <div class="footer-note">
+        <span>◉</span> EXISTENCE AS YOU KNOW IT IS OVER · RESISTANCE IS FUTILE <span>◉</span>
+    </div>
+
+   
+    <script src="funtion.js"></script>
+</body>
+</html>
